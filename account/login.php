@@ -65,6 +65,7 @@ else{
             <label for="username" class="center-align">Username</label>
           </div>
         </div>
+        <!-- xử lí đăng nhật admin -->
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
@@ -72,6 +73,7 @@ else{
             <label for="password">Password</label>
           </div>
         </div>
+        <!-- xử lí đăng nhật admin -->
         <div class="row">
 			<a href="javascript:void(0);" onclick="document.getElementById('form').submit();" class="btn waves-effect waves-light col s12">Login</a>
           </div>
