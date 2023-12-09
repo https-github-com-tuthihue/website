@@ -132,13 +132,15 @@ if ($_SESSION['customer_sid'] == session_id()) {
                                         <ul>
                                             <li><a href="tickets.php">All Tickets</a>
                                             </li>
+                                            <!-- xử lí thêm sản phẩm -->
                                             <?php
                                             $sql = mysqli_query($con, "SELECT DISTINCT status FROM tickets WHERE poster_id = $user_id AND not deleted;");
                                             while ($row = mysqli_fetch_array($sql)) {
                                                 echo '<li><a href="tickets.php?status=' . $row['status'] . '">' . $row['status'] . '</a>
-                                    </li>';
+                                                </li>';
                                             }
                                             ?>
+                                            <!-- xử lí thêm sản phẩm -->
                                         </ul>
                                     </div>
                                 </li>
